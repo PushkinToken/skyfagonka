@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyfagonka — Главная</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #0f172a;
+            --accent-color: #2563eb;
+            --card-bg: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--card-bg);
+            padding: 20px 5%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--accent-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+        }
+        .card-img {
+            width: 100%;
+            height: 180px;
+            background: #e2e8f0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .price {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 12px 0;
+        }
+        .btn {
+            display: inline-block;
+            text-align: center;
+            background: var(--accent-color);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Skyfagonka</a>
+        <nav>
+            <a href="index.html">Каталог</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Добро пожаловать в Skyfagonka</h1>
+        <p>Здесь скоро появится наш каталог товаров. Выберите интересующую позицию ниже, чтобы открыть подробную страницу.</p>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Популярные товары</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <div class="card-img">Фото товара 1</div>
+                    <h3>Товар №1 (Шаблон)</h3>
+                    <p>Краткое описание характеристик первого товара.</p>
+                </div>
+                <div>
+                    <div class="price">0 ₽</div>
+                    <a href="product-1.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-img">Фото товара 2</div>
+                    <h3>Товар №2 (Шаблон)</h3>
+                    <p>Краткое описание характеристик второго товара.</p>
+                </div>
+                <div>
+                    <div class="price">0 ₽</div>
+                    <a href="product-2.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacts">
+        <p>© 2026 Skyfagonka. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
